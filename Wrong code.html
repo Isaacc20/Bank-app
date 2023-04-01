@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Icofont/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="Index.js">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sign{
+            background-color: coral;
+            margin: auto;
+            border-radius: 0px 0px 30px 30px;
+        }
+        .signn{
+            margin: auto;
+        }
+        /* .log  div, button{
+            display: none;
+            background-color: aqua;
+        }
+        .log button{
+            display: none;
+            background-color: aqua;
+        }
+        .log  h1{
+            display: none;
+            background-color: aqua;
+        }
+        .log{
+            display: none;
+            background-color: aqua;
+        } */
+    </style>
+</head>
+<body>
+    <div id="sign" class="w-75 p-5 sign">
+        <form action="" class="d-grid my-5 mx-4 gap-3 signn">
+            <h1 id="losign" class="text-secondary">Sign up</h1>
+            <div>
+                <label for="namee">Username</label>
+                <input id="namee" type="text" class="w-100" placeholder="First name first eg. Isaac Oyedele" required autofocus>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="number" class="w-100" required>
+            </div>
+            <div>
+                <label for="password">Password</label><br>
+                <div class="d-flex"><input id="password" type="password" class="w-75" required><button onclick="pass_1()" type="button" class="btn btn-transparent text-dark"><i class="fa fa-eye"></i></button></div>
+            </div>
+            <div id="confirm">
+                <label for="p_word">Confirm Password</label><br>
+                <div class="d-flex"><input id="p_word" type="password" class="w-75" required><button onclick="" type="button" class="btn btn-transparent text-dark"><i class="fa fa-eye"></i></button></div>
+            </div>
+            <button onclick="login()" type="button" id="clear" class="btn btn-secondary">Sign In</button>
+        </form>
+        <form action="" id="log" class="d-grid my-5 mx-4 gap-3 signn log">
+            <h1 id="losign" class="text-secondary">Log In</h1>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="number" class="w-100" required>
+            </div>
+            <div>
+                <label for="password">Password</label><br>
+                <div class="d-flex"><input id="password" type="password" class="w-75" required><button onclick="pass_1()" type="button" class="btn btn-transparent text-dark"><i class="fa fa-eye"></i></button></div>
+            </div>
+            <button onclick="login()" type="button" id="clear" class="btn btn-secondary">Log In</button>
+        </form>
+    </div>
+</body>
+</html>
+<script src="Index.js"></script>
+<script>
+    let losign = document.getElementById("losign");
+    let namee = document.getElementById("namee");
+    let phone = document.getElementById("phone");
+    let password = document.getElementById("password");
+    let p_word = document.getElementById("p_word");
+    let confirmed = document.getElementById("confirm");
+    let clear = document.getElementById("clear");
+    let log = document.getElementById("log");
+
+    // log.style.display = "none"
+    // function showme() {
+        
+    // }
+    function login() {
+        if (namee.value == 0 || phone.value == 0 || password.value == 0 || p_word.value == 0) {
+             alert( "Inputs cannot be left empty");
+             return;
+         }
+         else if (namee.value > 1 || phone.value > 1 || password.value > 1 || p_word.value > 1) {
+             alert("Abeg work jare")
+             console.log("Abeg work jare");
+             document.getElementById('sign').style.display = "none"
+             document.getElementById('sign').style.backgroundColor = "green"
+         }
+
+    }
+</script>

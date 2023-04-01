@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Icofont/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Document</title>
+</head>
+<body class="d-grid">
+    <div class="topnav d-flex justify-content-between align-items-center">
+        <button class="btn fs-2 sil"><i class="fa-solid fa-ranking-star"></i></button>
+        <div class="sidenav d-flex align-items-center">
+            <button class="btn mx-3 mb-2 text-start pinks"><h6>Dashboard</h6></button>
+            <button class="btn mx-3 mb-2 text-start pinks"><h6>History</h6></button>
+            <button class="btn mx-3 mb-2 text-start pinks"><h6>Transfer</h6></button>
+        </div>
+        <button type="submit" onclick="log_in()" class="btn sil"><h6>Log Out</h6></button>
+    </div>
+    <div class="d-flex">
+        <!-- <div class="sidenav">
+            <button class="p-3 mb-2 text-start text-light bg-dark side"><h6>Dashboard</h6></button>
+            <button class="p-3 mb-2 text-start text-light bg-dark side"><h6>History</h6></button>
+            <button class="p-3 mb-2 text-start text-light bg-dark side"><h6>Transfer</h6></button>
+        </div> -->
+        <div class="body">
+            <div id="welcome_page" class=" pt-4 px-5">
+                <h1 id="name" class=""></h1><hr>
+                <h1 class="set">Set up your Account</h1><hr>
+                <div class="">
+                    <h4 class="setup">To set up your playGame account you'll, need a soft copy ATM card as well as an Account number</h4>
+                <h4 class="setup">Good news!!!💃 If you have successfully set up your playGame account, you'll win ₦5000 price which can be transferred to any existing playGame account.</h4>
+                <h4 class="setup d-flex">To earn more money you have to&nbsp;<span class="setup pink">playGames</span></h4>
+                <h4 class="setup d-flex">Before then, accept all&nbsp;<label for="box" onclick="agree()" id="agree" class="setup pink">privacy terms</label>&nbsp;<input id="box" type="checkbox" style="accent-color: gold;" checked></h4>
+                </div>
+                <div class="w-100 d-flex align-items-stretch justify-content-between">
+                    <button onclick="gen_no()" class="btn pink">Generate account number</button>
+                    <i class="number"><span id="number" class="text-secondary">your account number will show here</span></i>
+                </div>
+                <div class="d-flex align-items-start justify-content-between">
+                    <button onclick="atm()" class="btn pink">Generate ATM</button>
+                  <div class="atm_card">
+                    <div class="flip-card-inner">
+                        <div class="front px-3 py-1 top-0 right-0 left-0">
+                            <i class="text-light">playGame</i>&nbsp;<small class="text-black">Bank</small>
+                            <i class="fa fa-ranking-star fs-3 text-light atm-logo"></i><br>
+                            <i class="fa fa-film display-3 my-2 mx-1 text-warning rounded-1"></i><br>
+                            <i id="atm_no" class="display-4"></i>
+                            <h5 id="username"></h5>
+                        </div>
+                        <div class="back py-1 px-2">
+                            <i class="text-light">playGame</i>&nbsp;<small class="text-black">Bank</small>
+                            <div class="white mt-5 text-end px-3"><i id="three"></i></div>
+                            <div class="color2 position-absolute text-end px-3"><i class="fa fa-ranking-star fs-3 text-white"></i></div>
+                            <div class="color position-absolute bottom-0"></div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div id="dashboard">
+                <div id="top" class="h-25">
+                    <h3 class="" id="myname"></h3>
+                    <h1 class="" id="balance"></h1>
+                    <button id="transfer" class="btn text-white">Transfer</button>
+                </div>
+            </div>
+            <div id="trans_page">
+                <form action="">
+                    <label for="destination">Destination account</label>
+                    <input id="destination" type="number">
+                    <h6 id="des_name"></h6>
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number">
+                    <p id="c_amo"></p>
+                    <label for="naration">Naration</label>
+                    <input id="naration" type="text">
+                    <button id="firm">Confirm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="Dashboard.js"></script>

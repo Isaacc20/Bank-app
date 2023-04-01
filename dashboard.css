@@ -1,0 +1,125 @@
+.topnav{
+    background: #020649;
+}
+/* .sidenav{
+    background: linear-gradient(palegoldenrod, darkgoldenrod);
+    width: 20%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color:palegoldenrod;
+} */
+.sidenav button{
+    color: beige;
+}
+.sil{
+    color: silver;
+}
+.set{
+    color: #23178E;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 7px silver;
+}
+.body{
+    background: lightyellow;
+    width: 100%;
+}
+#name{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    color: #020649;
+    font-weight: 600;
+}
+.setup{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    font-style: italic;
+}
+#agree{
+    cursor: pointer;
+}
+.number{
+    height: fit-content;
+    border-bottom: 2px solid black;
+}
+hr{
+    border-top: 1px solid #AF1B3F;
+}
+.pink{
+    color: #AF1B3F;
+}
+.atm_card{
+    width: 350px;
+    height: 190px;
+    border-radius: 10px;
+    perspective: 1000px;
+}
+.atm_card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+.front{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1443' height='249' preserveAspectRatio='none' viewBox='0 0 1443 249'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1401%26quot%3b)' fill='none'%3e%3crect width='1443' height='249' x='0' y='0' fill='url(%23SvgjsRadialGradient1402)'%3e%3c/rect%3e%3cpath d='M38 249L287 0L389 0L140 249z' fill='url(%23SvgjsLinearGradient1403)'%3e%3c/path%3e%3cpath d='M243.095 249L492.095 0L696.095 0L447.095 249z' fill='url(%23SvgjsLinearGradient1403)'%3e%3c/path%3e%3cpath d='M514.19 249L763.19 0L940.19 0L691.19 249z' fill='url(%23SvgjsLinearGradient1403)'%3e%3c/path%3e%3cpath d='M752.285 249L1001.285 0L1292.2849999999999 0L1043.2849999999999 249z' fill='url(%23SvgjsLinearGradient1403)'%3e%3c/path%3e%3cpath d='M1420 249L1171 0L934 0L1183 249z' fill='url(%23SvgjsLinearGradient1404)'%3e%3c/path%3e%3cpath d='M1202.905 249L953.905 0L640.405 0L889.405 249z' fill='url(%23SvgjsLinearGradient1404)'%3e%3c/path%3e%3cpath d='M953.81 249L704.81 0L625.31 0L874.31 249z' fill='url(%23SvgjsLinearGradient1404)'%3e%3c/path%3e%3cpath d='M712.715 249L463.71500000000003 0L220.71500000000003 0L469.71500000000003 249z' fill='url(%23SvgjsLinearGradient1404)'%3e%3c/path%3e%3cpath d='M1300.9750925701417 249L1443 106.9750925701417L1443 249z' fill='url(%23SvgjsLinearGradient1403)'%3e%3c/path%3e%3cpath d='M0 249L142.0249074298583 249L 0 106.9750925701417z' fill='url(%23SvgjsLinearGradient1404)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1401'%3e%3crect width='1443' height='249' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cradialGradient cx='100%25' cy='0%25' r='1464.33' gradientUnits='userSpaceOnUse' id='SvgjsRadialGradient1402'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 69%2c 158%2c 1)' offset='1'%3e%3c/stop%3e%3c/radialGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1403'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.6)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.6)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1404'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.6)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.6)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-position: center;
+}
+.front #username{
+    font-family: monospace;
+    font-size: x-large;
+}
+.atm-logo{
+    float: right;
+}
+.back{
+    background-color: #020649;
+    transform: rotateY(180deg);
+}
+.white{
+    width: 70%;
+    height: 22px;
+    background: linear-gradient(to bottom right, white, white, white, white, grey, white, white, white, white, grey, white, white, white, white, grey, white, white, white, white, grey, white, white, white, white, grey, white, white, white, white);
+}
+.color2{
+    width: 100%;
+    height: 30px;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.877);
+}
+.color{
+    width: 100%;
+    height: 20px;
+    right: 0;
+    left: 0;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgba(0, 0, 0, 0.877);
+}
+#top{
+    background-color: silver;
+}
+#top #myname{
+    color: #23178E;
+}
+#top #balance{
+    color: #23178E;
+}
